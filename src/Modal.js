@@ -10,7 +10,7 @@ const style = {
   top: "50%",
   left: "50%",
   transform: "translate(-50%, -50%)",
-  width: 400,
+  width: "70%",
   bgcolor: "background.paper",
   border: "1px solid transparent",
   borderRadius: "25px",
@@ -33,7 +33,7 @@ function ModalComp() {
             open={() => handleModal()}
             onClose={() => handleModal()}
           >
-            <Fade in={() => handleModal}>
+            <Fade in={() => handleModal()}>
               <Box sx={style}>
                 {modalContent}
 

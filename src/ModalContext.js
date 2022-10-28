@@ -6,7 +6,7 @@ const ModalContext = createContext()
 function ModalProvider({ children }) {
 
     const [modal, setModal] = useState(false)
-    const [modalContent, setModalContent] = useState("Modal content.")
+    const [modalContent, setModalContent] = useState("Modal content.") 
 
     const handleModal = (content = false) => {
         setModal(!modal)
